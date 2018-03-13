@@ -10,12 +10,21 @@
 
     <!-- Question title style -->
     <style name="questionTitleStyle">
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">#ECEFF1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">@dimen/padding</item>
     </style>
 
-
-
-
+    <!--Question image style-->
+    <style name="questionImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>

@@ -2,7 +2,6 @@ package com.example.android.milanii;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -28,15 +27,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // initialize the views inside the onCreate method to avoid multiple reinitializing
-        quiz1AnswerA = (CheckBox) findViewById(R.id.quiz_1_answer_a);
-        quiz1AnswerB = (CheckBox) findViewById(R.id.quiz_1_answer_b);
-        quiz1AnswerC = (CheckBox) findViewById(R.id.quiz_1_answer_c);
-        quiz2Answer = (EditText) findViewById(R.id.quiz_2_answer);
-        quiz3AnswerB = (RadioButton) findViewById(R.id.quiz_3_answer_b);
-        quiz4AnswerA = (CheckBox) findViewById(R.id.quiz_4_answer_a);
-        quiz4AnswerB = (CheckBox) findViewById(R.id.quiz_4_answer_b);
-        quiz4AnswerC = (CheckBox) findViewById(R.id.quiz_4_answer_c);
-        quiz5AnswerC = (RadioButton) findViewById(R.id.quiz_5_answer_c);
+        quiz1AnswerA = findViewById(R.id.quiz_1_answer_a);
+        quiz1AnswerB = findViewById(R.id.quiz_1_answer_b);
+        quiz1AnswerC = findViewById(R.id.quiz_1_answer_c);
+        quiz2Answer = findViewById(R.id.quiz_2_answer);
+        quiz3AnswerB = findViewById(R.id.quiz_3_answer_b);
+        quiz4AnswerA = findViewById(R.id.quiz_4_answer_a);
+        quiz4AnswerB = findViewById(R.id.quiz_4_answer_b);
+        quiz4AnswerC = findViewById(R.id.quiz_4_answer_c);
+        quiz5AnswerC = findViewById(R.id.quiz_5_answer_c);
     }
 
     /**

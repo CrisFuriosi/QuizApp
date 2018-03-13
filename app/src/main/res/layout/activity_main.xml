@@ -30,8 +30,6 @@
 
         <TextView
             style="@style/questionTitleStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
             android:text="@string/ask_name" />
@@ -54,9 +52,6 @@
 
             <TextView
                 style="@style/questionTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding"
                 android:text="@string/question_1" />
 
             <LinearLayout
@@ -90,13 +85,10 @@
                 </LinearLayout>
 
                 <ImageView
+                    style="@style/questionImageStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"
                     android:contentDescription="@string/quiz1_img"
-                    android:scaleType="centerCrop"
                     android:src="@drawable/quiz1" />
             </LinearLayout>
         </LinearLayout>
@@ -109,9 +101,6 @@
 
             <TextView
                 style="@style/questionTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding"
                 android:text="@string/question_2" />
 
             <LinearLayout
@@ -130,13 +119,8 @@
                     android:textSize="@dimen/text_size" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"
+                    style="@style/questionImageStyle"
                     android:contentDescription="@string/quiz2_img"
-                    android:scaleType="centerCrop"
                     android:src="@drawable/quiz2" />
             </LinearLayout>
         </LinearLayout>
@@ -149,9 +133,6 @@
 
             <TextView
                 style="@style/questionTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding"
                 android:text="@string/question_3" />
 
             <LinearLayout
@@ -185,13 +166,8 @@
                 </RadioGroup>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"
+                    style="@style/questionImageStyle"
                     android:contentDescription="@string/quiz3_img"
-                    android:scaleType="centerCrop"
                     android:src="@drawable/quiz3" />
             </LinearLayout>
         </LinearLayout>
@@ -204,9 +180,6 @@
 
             <TextView
                 style="@style/questionTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding"
                 android:text="@string/question_4" />
 
             <CheckBox
@@ -236,9 +209,6 @@
 
             <TextView
                 style="@style/questionTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="@dimen/padding"
                 android:text="@string/question_5" />
 
             <LinearLayout
@@ -272,13 +242,8 @@
                 </RadioGroup>
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true"
+                    style="@style/questionImageStyle"
                     android:contentDescription="@string/quiz5_img"
-                    android:scaleType="centerCrop"
                     android:src="@drawable/quiz5" />
             </LinearLayout>
         </LinearLayout>
