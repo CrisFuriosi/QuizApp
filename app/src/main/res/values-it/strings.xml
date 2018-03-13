@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Gita a Milano</string>
+
+    <!--Quiz introduction [CHAR LIMIT=NONE]-->
+    <string name="intro">Ecco un\'opportunità per mettere alla prova la tua conoscenza della città. Vuoi fare un tentativo?</string>
+
+    <!--Ask user's name [CHAR LIMIT=NONE]-->
+    <string name="ask_name">Bene! Per favore scrivi il tuo nome:</string>
+
+    <!--Name EditText hint [CHAR LIMIT = 20]-->
+    <string name="name">Il tuo nome&#8230;</string>
+
+    <!--Quiz 1 question [CHAR LIMIT = NONE]-->
+    <string name="question_1">Cosa rende famosa la città di Milano?</string>
+
+    <!--Quiz 1 answers [CHAR LIMIT = 20]-->
+    <string name="answer_1_a">Moda e shopping</string>
+    <string name="answer_1_b">Le spiagge</string>
+    <string name="answer_1_c">La cattedrale del Duomo</string>
+
+    <!--Quiz 1 image - content description [CHAR LIMIT = NONE]-->
+    <string name="quiz1_img">Uno scorcio della Galleria Vittorio Emanuele II</string>
+
+    <!--Quiz 2 question [CHAR LIMIT = NONE]-->
+    <string name="question_2">Chi ha dipinto \"L\'ultima cena\"?</string>
+
+    <!--Quiz 2 EditText hint [CHAR LIMIT = 20]-->
+    <string name="question_2_guess">Riesci a indovinare?</string>
+
+    <!--Quiz 2 image - content description [CHAR LIMIT = NONE]-->
+    <string name="quiz2_img">Un dettaglio del dipinto \"L\'ultima cena\"</string>
+
+    <!--Quiz 3 question [CHAR LIMIT = NONE]-->
+    <string name="question_3">Quale di questi dolci è tipico di Milano?</string>
+
+    <!--Quiz 3 image - content description [CHAR LIMIT = NONE]-->
+    <string name="quiz3_img">Il dolce natalizio tipico di Milano</string>
+
+    <!--Quiz 4 question [CHAR LIMIT = NONE]-->
+    <string name="question_4">Cosa puoi fare a Milano?</string>
+
+    <!--Quiz 1 answers [CHAR LIMIT = 37]-->
+    <string name="answer_4_a">Leggere le lettere d\'amore di Lucrezia Borgia</string>
+    <string name="answer_4_b">Cenare in un tram, mentre visiti la città</string>
+    <string name="answer_4_c">Bere un buon caffè in piazza Navona</string>
+
+    <!--Quiz 5 question [CHAR LIMIT = NONE]-->
+    <string name="question_5">Le montagne che puoi ammirare da Milano in quegli splendidi giorni di vento sono&#8230;</string>
+
+    <!--Quiz 5 answers [CHAR LIMIT = 20]-->
+    <string name="answer_5_a">i Carpazi</string>
+    <string name="answer_5_b">gli Appennini</string>
+    <string name="answer_5_c">le Alpi</string>
+
+    <!--Quiz 5 image - content description [CHAR LIMIT = NONE]-->
+    <string name="quiz5_img">Montagna innevata</string>
+
+    <!--submit button [CHAR LIMIT = 25]-->
+    <string name="check_results">Controlla il tuo risultato</string>
+
+    <!--Toast: good result [CHAR LIMIT = NONE]-->
+    <string name="toast_good">Ben fatto, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+        La tua conoscenza di Milano è incredibile! \
+        \
+        Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string>
+
+    <!--Toast: not bad, retry! [CHAR LIMIT = NONE]-->
+    <string name="toast_nice_try">Bel tentativo, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+        Ma io so che puoi fare di meglio! \
+        \
+        Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string></resources>

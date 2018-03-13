@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">#E64A19</item>
+        <item name="colorAccent">#607D8B</item>
+    </style>
+
+    <!-- Question title style -->
+    <style name="questionTitleStyle">
+        <item name="android:background">#ECEFF1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/padding</item>
+    </style>
+
+
+
+
+</resources>
