@@ -8,6 +8,13 @@
         <item name="colorAccent">#607D8B</item>
     </style>
 
+    <!--Question container LinearLayout style-->
+    <style name="questionContainerLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
+
     <!-- Question title style -->
     <style name="questionTitleStyle">
         <item name="android:layout_width">match_parent</item>
@@ -17,12 +24,26 @@
         <item name="android:padding">@dimen/padding</item>
     </style>
 
-    <!--Question image style-->
+    <!-- Question choices LinearLayout style-->
+    <style name="questionChoicesStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">@dimen/question_choices_weight</item>
+        <!--<item name="android:layout_margin">@dimen/margin</item>-->
+    </style>
+
+    <!-- CheckBoxes and RadioButtons style -->
+    <style name="checkBoxesAndRadioButtonsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Question image style -->
     <style name="questionImageStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_weight">2</item>
+        <item name="android:layout_weight">@dimen/question_image_weight</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">centerCrop</item>
     </style>

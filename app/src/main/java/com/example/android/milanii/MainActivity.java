@@ -2,6 +2,7 @@ package com.example.android.milanii;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -15,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     // define the views to initialize inside onCreate() method
     CheckBox quiz1AnswerA, quiz1AnswerB, quiz1AnswerC, quiz4AnswerA, quiz4AnswerB, quiz4AnswerC;
-    EditText quiz2Answer;
+    EditText userNameTextView, quiz2Answer;
     RadioButton quiz3AnswerB, quiz5AnswerC;
 
      // define the score at the beginning of the quiz game
-    int score = 0;
+    int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // initialize the views inside the onCreate method to avoid multiple reinitializing
+        userNameTextView = findViewById(R.id.user_name);
         quiz1AnswerA = findViewById(R.id.quiz_1_answer_a);
         quiz1AnswerB = findViewById(R.id.quiz_1_answer_b);
         quiz1AnswerC = findViewById(R.id.quiz_1_answer_c);
@@ -49,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View view) {
 
         // Check name in name_edit EditText
-        String userName = ((EditText) findViewById(R.id.user_name)).getText().toString();
+        String userName = (userNameTextView.getText().toString());
+        if (TextUtils.isEmpty(userName)) {
+            userName = "Anonymous user";
+        }
+
 
         // Check Quiz 1 and assign score
         ScoreIncrementIfBooleanIsTrue(quiz1AnswerA.isChecked());
