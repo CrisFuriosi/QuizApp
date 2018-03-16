@@ -2,6 +2,7 @@
 <resources>
     <dimen name="text_size">16sp</dimen>
     <dimen name="margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
     <dimen name="padding">8dp</dimen>
     <dimen name="question_choices_weight">1</dimen>
     <dimen name="question_image_weight">2</dimen>

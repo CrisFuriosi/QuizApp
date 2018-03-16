@@ -8,6 +8,16 @@
         <item name="colorAccent">#607D8B</item>
     </style>
 
+    <!-- Intro EditText style -->
+    <style name = "introEditTextStyle">
+        <item name="android:layout_width">match_parent</item> //
+        <item name="android:layout_height">wrap_content</item> //
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
     <!--Question container LinearLayout style-->
     <style name="questionContainerLinearLayoutStyle">
         <item name="android:layout_width">match_parent</item>
@@ -24,18 +34,22 @@
         <item name="android:padding">@dimen/padding</item>
     </style>
 
-    <!-- Question choices LinearLayout style-->
+    <!-- Question choices LinearLayout style -->
     <style name="questionChoicesStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">@dimen/question_choices_weight</item>
-        <!--<item name="android:layout_margin">@dimen/margin</item>-->
     </style>
 
     <!-- CheckBoxes and RadioButtons style -->
     <style name="checkBoxesAndRadioButtonsStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Question EditText style -->
+    <style name = "questionEditTextStyle" parent="@style/introEditTextStyle">
+        <item name="android:layout_weight">@dimen/question_choices_weight</item>
     </style>
 
     <!-- Question image style -->

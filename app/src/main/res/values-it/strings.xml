@@ -60,6 +60,9 @@
     <!--submit button [CHAR LIMIT = 25]-->
     <string name="check_results">Controlla il tuo risultato</string>
 
+    <!--Toast: if user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
+    <string name="default_user_name">mé amis</string>
+
     <!--Toast: good result [CHAR LIMIT = NONE]-->
     <string name="toast_good">Ben fatto, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         La tua conoscenza di Milano è incredibile! \
@@ -70,4 +73,5 @@
     <string name="toast_nice_try">Bel tentativo, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         Ma io so che puoi fare di meglio! \
         \
-        Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string></resources>
+        Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string>
+</resources>

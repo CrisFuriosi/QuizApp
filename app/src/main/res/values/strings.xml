@@ -5,10 +5,10 @@
     <!--Header image - content description [CHAR LIMIT=NONE]-->
     <string name="header_img">MILANO</string>
 
-    <!--Quiz introduction [CHAR LIMIT=NONE]-->
+    <!--Quiz introduction [CHAR LIMIT = NONE]-->
     <string name="intro">Here is a chance to test your knowledge of the city. Will you give it a try?</string>
 
-    <!--Ask user's name [CHAR LIMIT=NONE]-->
+    <!--Ask user's name [CHAR LIMIT = NONE]-->
     <string name="ask_name">Good! Please enter your name: </string>
 
     <!--Name EditText hint [CHAR LIMIT = 20]-->
@@ -66,6 +66,9 @@
 
     <!--submit button [CHAR LIMIT = 25]-->
     <string name="check_results">Check your results</string>
+
+    <!--Toast: if user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
+    <string name="default_user_name">my friend</string>
 
     <!--Toast: good result [CHAR LIMIT = NONE]-->
     <string name="toast_good">Well done, <xliff:g example="Amy" id="name">%s</xliff:g>. \

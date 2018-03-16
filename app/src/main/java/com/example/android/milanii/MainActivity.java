@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     EditText userNameTextView, quiz2Answer;
     RadioButton quiz3AnswerB, quiz5AnswerC;
 
-     // define the score at the beginning of the quiz game
+    // define the score at the beginning of the quiz game
     int score;
 
     @Override
@@ -41,21 +41,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the order button is clicked.
+     * This method is called when the submit button is clicked.
      * Checks user's name
      * Checks user's answers and increment score
      * Calls feedback toast
      *
      * @param view - method is called onClick of ViewButton
      */
-    public void submit(View view) {
+    public void submit (View view) {
 
         // Check name in name_edit EditText
         String userName = (userNameTextView.getText().toString());
         if (TextUtils.isEmpty(userName)) {
-            userName = "Anonymous user";
+            userName = getString(R.string.default_user_name);
         }
-
 
         // Check Quiz 1 and assign score
         ScoreIncrementIfBooleanIsTrue(quiz1AnswerA.isChecked());
