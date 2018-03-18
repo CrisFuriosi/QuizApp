@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     // define the views to initialize inside onCreate() method
     CheckBox cbQuiz1AnswerAShopping, cbQuiz1AnswerBBeaches, cbQuiz1AnswerCCathedral,
-            cbQuiz4AnswerALetters, cbQuiz4AnswerBBeaches, cbQuiz4AnswerCCathedral;
+            cbQuiz4AnswerALetters, cbQuiz4AnswerBBeaches, cbQuiz4AnswerCCoffee;
     EditText editUserName, editQuiz2Answer;
     RadioButton rbQuiz3AnswerBPanettone, rbQuiz5AnswerCAlps;
 
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         rbQuiz3AnswerBPanettone = findViewById(R.id.rb_quiz_3_answer_b_panettone);
         cbQuiz4AnswerALetters = findViewById(R.id.cb_quiz_4_answer_a_letters);
         cbQuiz4AnswerBBeaches = findViewById(R.id.cb_quiz_4_answer_b_beaches);
-        cbQuiz4AnswerCCathedral = findViewById(R.id.cb_quiz_4_answer_c_cathedral);
+        cbQuiz4AnswerCCoffee = findViewById(R.id.cb_quiz_4_answer_c_coffee);
         rbQuiz5AnswerCAlps = findViewById(R.id.rb_quiz_5_answer_c_alps);
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         // Check name in edit_user_name EditText
         String userName = (editUserName.getText().toString());
         if (TextUtils.isEmpty(userName)) {
-            userName = getString(R.string.toast_default_user_name_string);
+            userName = getString(R.string.default_user_name_toast_string);
         }
 
         // Check Quiz 1 and assign score
@@ -74,16 +74,16 @@ public class MainActivity extends AppCompatActivity {
         // Check Quiz 4 and assign score
         incrementScoreIfBooleanIsTrue(cbQuiz4AnswerALetters.isChecked());
         incrementScoreIfBooleanIsTrue(cbQuiz4AnswerBBeaches.isChecked());
-        incrementScoreIfBooleanIsFalse(cbQuiz4AnswerCCathedral.isChecked());
+        incrementScoreIfBooleanIsFalse(cbQuiz4AnswerCCoffee.isChecked());
 
         // Check Quiz 5 and assign score
         incrementScoreIfBooleanIsTrue(rbQuiz5AnswerCAlps.isChecked());
 
         // Display results toast
         if (score > 4) {
-            Toast.makeText(this, getString(R.string.toast_good_string, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.well_done_toast_string, userName, score), Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(this, getString(R.string.toast_nice_try_string, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.nice_try_toast_string, userName, score), Toast.LENGTH_LONG).show();
         }
         // Reset score value
         score = 0;
