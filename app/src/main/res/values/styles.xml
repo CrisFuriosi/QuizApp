@@ -9,7 +9,7 @@
     </style>
 
     <!-- Intro EditText style -->
-    <style name = "introEditTextStyle">
+    <style name="IntroEditTextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
@@ -19,14 +19,14 @@
     </style>
 
     <!--Quiz container LinearLayout style-->
-    <style name="quizContainerLinearLayoutStyle">
+    <style name="QuizContainerLinearLayoutStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
     </style>
 
     <!-- Quiz title style -->
-    <style name="quizTitleStyle">
+    <style name="QuizTitleStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">#ECEFF1</item>
@@ -35,25 +35,25 @@
     </style>
 
     <!-- Quiz choices LinearLayout style -->
-    <style name="quizChoicesStyle">
+    <style name="QuizChoicesStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">@dimen/quiz_choices_weight</item>
     </style>
 
     <!-- CheckBoxes and RadioButtons style -->
-    <style name="checkBoxesAndRadioButtonsStyle">
+    <style name="CheckBoxesAndRadioButtonsStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <!-- Quiz EditText style -->
-    <style name="quizEditTextStyle" parent="@style/introEditTextStyle">
+    <style name="QuizEditTextStyle" parent="@style/IntroEditTextStyle">
         <item name="android:layout_weight">@dimen/quiz_choices_weight</item>
     </style>
 
     <!-- Quiz image style -->
-    <style name="quizImageStyle">
+    <style name="QuizImageStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>

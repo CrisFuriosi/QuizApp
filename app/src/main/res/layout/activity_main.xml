@@ -21,27 +21,27 @@
             android:src="@drawable/image_header" />
 
         <TextView
-            style="@style/quizTitleStyle"
+            style="@style/QuizTitleStyle"
             android:layout_margin="@dimen/margin"
             android:text="@string/header_txt_intro_string" />
 
         <TextView
-            style="@style/quizTitleStyle"
+            style="@style/QuizTitleStyle"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
             android:text="@string/header_txt_ask_name_string" />
 
         <EditText
             android:id="@+id/edit_user_name"
-            style="@style/introEditTextStyle"
+            style="@style/IntroEditTextStyle"
             android:hint="@string/header_edit_name_hint_string" />
 
         <LinearLayout
-            style="@style/quizContainerLinearLayoutStyle"
+            style="@style/QuizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/quizTitleStyle"
+                style="@style/QuizTitleStyle"
                 android:text="@string/quiz_1_txt_title_famous_for_string" />
 
             <LinearLayout
@@ -50,27 +50,27 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    style="@style/quizChoicesStyle"
+                    style="@style/QuizChoicesStyle"
                     android:orientation="vertical">
 
                     <CheckBox
                         android:id="@+id/cb_quiz_1_answer_a_shopping"
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_1_cb_answer_a_shopping_string" />
 
                     <CheckBox
                         android:id="@+id/cb_quiz_1_answer_b_beaches"
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_1_cb_answer_b_beaches_string" />
 
                     <CheckBox
                         android:id="@+id/cb_quiz_1_answer_c_cathedral"
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_1_cb_answer_c_cathedral_string" />
                 </LinearLayout>
 
                 <ImageView
-                    style="@style/quizImageStyle"
+                    style="@style/QuizImageStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/quiz_1_img_shoes_description_string"
@@ -79,11 +79,11 @@
         </LinearLayout>
 
         <LinearLayout
-            style="@style/quizContainerLinearLayoutStyle"
+            style="@style/QuizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/quizTitleStyle"
+                style="@style/QuizTitleStyle"
                 android:layout_marginBottom="@dimen/small_margin"
                 android:text="@string/quiz_2_txt_title_who_painted_mural_string" />
 
@@ -96,109 +96,109 @@
 
                 <EditText
                     android:id="@+id/edit_quiz_2_answer"
-                    style="@style/quizEditTextStyle"
+                    style="@style/QuizEditTextStyle"
                     android:hint="@string/quiz_2_edit_hint_guess_string" />
 
                 <ImageView
-                    style="@style/quizImageStyle"
+                    style="@style/QuizImageStyle"
                     android:contentDescription="@string/quiz_2_img_mural_description_string"
                     android:src="@drawable/image_quiz2_mural" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            style="@style/quizContainerLinearLayoutStyle"
+            style="@style/QuizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/quizTitleStyle"
+                style="@style/QuizTitleStyle"
                 android:text="@string/quiz_3_txt_title_food_string" />
 
             <LinearLayout
-                style="@style/quizChoicesStyle"
+                style="@style/QuizChoicesStyle"
                 android:orientation="horizontal">
 
                 <RadioGroup
-                    style="@style/quizChoicesStyle"
+                    style="@style/QuizChoicesStyle"
                     android:orientation="vertical">
 
                     <RadioButton
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_3_rb_answer_a_pandoro_string" />
 
                     <RadioButton
                         android:id="@+id/rb_quiz_3_answer_b_panettone"
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_3_rb_answer_b_panettone_string" />
 
                     <RadioButton
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_3_rb_answer_c_pandolce_string" />
                 </RadioGroup>
 
                 <ImageView
-                    style="@style/quizImageStyle"
+                    style="@style/QuizImageStyle"
                     android:contentDescription="@string/quiz_3_img_food_description_string"
                     android:src="@drawable/image_quiz3_food" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            style="@style/quizContainerLinearLayoutStyle"
+            style="@style/QuizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/quizTitleStyle"
+                style="@style/QuizTitleStyle"
                 android:text="@string/quiz_4_txt_title_can_do_string" />
 
             <CheckBox
                 android:id="@+id/cb_quiz_4_answer_a_letters"
-                style="@style/checkBoxesAndRadioButtonsStyle"
+                style="@style/CheckBoxesAndRadioButtonsStyle"
                 android:text="@string/quiz_4_cb_answer_a_letters_string" />
 
             <CheckBox
                 android:id="@+id/cb_quiz_4_answer_b_beaches"
-                style="@style/checkBoxesAndRadioButtonsStyle"
+                style="@style/CheckBoxesAndRadioButtonsStyle"
                 android:text="@string/quiz_4_cb_answer_b_tram_string" />
 
             <CheckBox
                 android:id="@+id/cb_quiz_4_answer_c_coffee"
-                style="@style/checkBoxesAndRadioButtonsStyle"
+                style="@style/CheckBoxesAndRadioButtonsStyle"
                 android:text="@string/quiz_4_cb_answer_c_coffee_string" />
         </LinearLayout>
 
         <LinearLayout
-            style="@style/quizContainerLinearLayoutStyle"
+            style="@style/QuizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/quizTitleStyle"
+                style="@style/QuizTitleStyle"
                 android:text="@string/quiz_5_txt_title_mountains" />
 
             <LinearLayout
-                style="@style/quizChoicesStyle"
+                style="@style/QuizChoicesStyle"
                 android:orientation="horizontal">
 
                 <RadioGroup
-                    style="@style/quizChoicesStyle"
+                    style="@style/QuizChoicesStyle"
                     android:orientation="vertical">
 
                     <RadioButton
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_5_rb_answer_a_carpazi_string" />
 
                     <RadioButton
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_5_rb_answer_b_apennines_string" />
 
                     <RadioButton
                         android:id="@+id/rb_quiz_5_answer_c_alps"
-                        style="@style/checkBoxesAndRadioButtonsStyle"
+                        style="@style/CheckBoxesAndRadioButtonsStyle"
                         android:text="@string/quiz_5_rb_answer_c_alps_string" />
                 </RadioGroup>
 
                 <ImageView
-                    style="@style/quizImageStyle"
+                    style="@style/QuizImageStyle"
                     android:contentDescription="@string/quiz_5_img_mountains_description_string"
                     android:src="@drawable/image_quiz5_mountains" />
             </LinearLayout>
