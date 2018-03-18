@@ -3,74 +3,78 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Gita a Milano</string>
 
-    <!--Quiz introduction [CHAR LIMIT=NONE]-->
-    <string name="intro">Ecco un\'opportunità per mettere alla prova la tua conoscenza della città. Vuoi fare un tentativo?</string>
+    <!--Header image - content description (ImageView) [CHAR LIMIT=NONE]-->
 
-    <!--Ask user's name [CHAR LIMIT=NONE]-->
-    <string name="ask_name">Bene! Per favore scrivi il tuo nome:</string>
+    <!--Quiz introduction (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_header_intro_string">Ecco un\'opportunità per mettere alla prova la tua conoscenza della città. Vuoi fare un tentativo?</string>
 
-    <!--Name EditText hint [CHAR LIMIT = 20]-->
-    <string name="name">Il tuo nome&#8230;</string>
+    <!--Ask user's name (TestView) ([CHAR LIMIT = NONE]-->
+    <string name="txt_header_ask_name_string">Bene! Per favore scrivi il tuo nome:</string>
 
-    <!--Quiz 1 question [CHAR LIMIT = NONE]-->
-    <string name="question_1">Cosa rende famosa la città di Milano?</string>
+    <!--Name hint (EditText) [CHAR LIMIT = 20]-->
+    <string name="edit_header_name_hint_string">Il tuo nome&#8230;</string>
 
-    <!--Quiz 1 answers [CHAR LIMIT = 20]-->
-    <string name="answer_1_a">Moda e shopping</string>
-    <string name="answer_1_b">Le spiagge</string>
-    <string name="answer_1_c">La cattedrale del Duomo</string>
+    <!--Quiz 1 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_1_title_famous_for_string">Cosa rende famosa la città di Milano?</string>
 
-    <!--Quiz 1 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz1_img">Uno scorcio della Galleria Vittorio Emanuele II</string>
+    <!--Quiz 1 answers (CheckBoxes) [CHAR LIMIT = 20]-->
+    <string name="cb_quiz_1_answer_a_shopping_string">Moda e shopping</string>
+    <string name="cb_quiz_1_answer_b_beaches_string">Le spiagge</string>
+    <string name="cb_quiz_1_answer_c_cathedral_string">La cattedrale del Duomo</string>
 
-    <!--Quiz 2 question [CHAR LIMIT = NONE]-->
-    <string name="question_2">Chi ha dipinto \"L\'ultima cena\"?</string>
+    <!--Quiz 1 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_1_shoes_description_string">Scarpe di moda</string>
 
-    <!--Quiz 2 EditText hint [CHAR LIMIT = 20]-->
-    <string name="question_2_guess">Riesci a indovinare?</string>
+    <!--Quiz 2 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_2_title_who_painted_mural_string">Chi ha dipinto \"L\'ultima cena\"?</string>
 
-    <!--Quiz 2 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz2_img">Un dettaglio del dipinto \"L\'ultima cena\"</string>
+    <!--Quiz 2 hint (EditText) [CHAR LIMIT = 20]-->
+    <string name="edit_quiz_2_hint_guess_string">Riesci a indovinare?</string>
 
-    <!--Quiz 3 question [CHAR LIMIT = NONE]-->
-    <string name="question_3">Quale di questi dolci è tipico di Milano?</string>
+    <!--Quiz 2 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_2_mural_description_string">Un dettaglio del dipinto \"L\'ultima cena\"</string>
+
+    <!--Quiz 3 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_3_title_food_string">Quale di questi dolci è tipico di Milano?</string>
+
+    <!--Quiz 3 answers (RadioButton) [CHAR LIMIT = 20]-->
 
     <!--Quiz 3 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz3_img">Il dolce natalizio tipico di Milano</string>
+    <string name="img_quiz_3_food_description_string">Il dolce natalizio tipico di Milano</string>
 
-    <!--Quiz 4 question [CHAR LIMIT = NONE]-->
-    <string name="question_4">Cosa puoi fare a Milano?</string>
+    <!--Quiz 4 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_4_title_can_do_string">Cosa puoi fare a Milano?</string>
 
-    <!--Quiz 1 answers [CHAR LIMIT = 37]-->
-    <string name="answer_4_a">Leggere le lettere d\'amore di Lucrezia Borgia</string>
-    <string name="answer_4_b">Cenare in un tram, mentre visiti la città</string>
-    <string name="answer_4_c">Bere un buon caffè in piazza Navona</string>
+    <!--Quiz 4 answers (CheckBoxes) [CHAR LIMIT = 37]-->
+    <string name="cb_quiz_4_answer_a_letters_string">Leggere le lettere d\'amore di Lucrezia Borgia</string>
+    <string name="cb_quiz_4_answer_b_tram_string">Cenare in un tram, mentre visiti la città</string>
+    <string name="cb_quiz_4_answer_c_coffee_string">Bere un buon caffè in piazza Navona</string>
 
-    <!--Quiz 5 question [CHAR LIMIT = NONE]-->
-    <string name="question_5">Le montagne che puoi ammirare da Milano in quegli splendidi giorni di vento sono&#8230;</string>
+    <!--Quiz 5 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_5_title_mountains">Le montagne che puoi ammirare da Milano in quegli splendidi giorni di vento sono&#8230;</string>
 
-    <!--Quiz 5 answers [CHAR LIMIT = 20]-->
-    <string name="answer_5_a">i Carpazi</string>
-    <string name="answer_5_b">gli Appennini</string>
-    <string name="answer_5_c">le Alpi</string>
+    <!--Quiz 5 answers (RadioButtons) [CHAR LIMIT = 20]-->
+    <string name="rb_quiz_5_answer_a_carpazi_string">i Carpazi</string>
+    <string name="rb_quiz_5_answer_a_apennines_string">gli Appennini</string>
+    <string name="rb_quiz_5_answer_c_alps_string">le Alpi</string>
 
-    <!--Quiz 5 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz5_img">Montagna innevata</string>
+    <!--Quiz 5 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_5_mountains_description_string">Montagna innevata</string>
 
-    <!--submit button [CHAR LIMIT = 25]-->
-    <string name="check_results">Controlla il tuo risultato</string>
+    <!--Submit (Button) [CHAR LIMIT = 25]-->
+    <string name="btn_check_results_string">Controlla il tuo risultato</string>
 
-    <!--Toast: if user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
-    <string name="default_user_name">mé amis</string>
+    <!--(Toast) If user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
+    <string name="toast_default_user_name_string">mé amis</string>
 
-    <!--Toast: good result [CHAR LIMIT = NONE]-->
-    <string name="toast_good">Ben fatto, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+    <!--(Toast) If score >4: good result [CHAR LIMIT = NONE]-->
+    <string name="toast_good_string">Ben fatto, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         La tua conoscenza di Milano è incredibile! \
         \
         Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string>
 
-    <!--Toast: not bad, retry! [CHAR LIMIT = NONE]-->
-    <string name="toast_nice_try">Bel tentativo, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+    <!--(Toast) If score <=4: Not bad, retry! [CHAR LIMIT = NONE]-->
+    <string name="toast_nice_try_string">Bel tentativo, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         Ma io so che puoi fare di meglio! \
         \
         Il tuo punteggio è: <xliff:g example="2" id="score">%d</xliff:g> su 9</string>

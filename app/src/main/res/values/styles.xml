@@ -10,23 +10,23 @@
 
     <!-- Intro EditText style -->
     <style name = "introEditTextStyle">
-        <item name="android:layout_width">match_parent</item> //
-        <item name="android:layout_height">wrap_content</item> //
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
         <item name="android:inputType">textCapWords</item>
         <item name="android:padding">@dimen/padding</item>
         <item name="android:textSize">@dimen/text_size</item>
     </style>
 
-    <!--Question container LinearLayout style-->
-    <style name="questionContainerLinearLayoutStyle">
+    <!--Quiz container LinearLayout style-->
+    <style name="quizContainerLinearLayoutStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
     </style>
 
-    <!-- Question title style -->
-    <style name="questionTitleStyle">
+    <!-- Quiz title style -->
+    <style name="quizTitleStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">#ECEFF1</item>
@@ -34,11 +34,11 @@
         <item name="android:padding">@dimen/padding</item>
     </style>
 
-    <!-- Question choices LinearLayout style -->
-    <style name="questionChoicesStyle">
+    <!-- Quiz choices LinearLayout style -->
+    <style name="quizChoicesStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">@dimen/question_choices_weight</item>
+        <item name="android:layout_weight">@dimen/quiz_choices_weight</item>
     </style>
 
     <!-- CheckBoxes and RadioButtons style -->
@@ -47,17 +47,17 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!-- Question EditText style -->
-    <style name = "questionEditTextStyle" parent="@style/introEditTextStyle">
-        <item name="android:layout_weight">@dimen/question_choices_weight</item>
+    <!-- Quiz EditText style -->
+    <style name="quizEditTextStyle" parent="@style/introEditTextStyle">
+        <item name="android:layout_weight">@dimen/quiz_choices_weight</item>
     </style>
 
-    <!-- Question image style -->
-    <style name="questionImageStyle">
+    <!-- Quiz image style -->
+    <style name="quizImageStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_vertical</item>
-        <item name="android:layout_weight">@dimen/question_image_weight</item>
+        <item name="android:layout_weight">@dimen/quiz_image_weight</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">centerCrop</item>
     </style>

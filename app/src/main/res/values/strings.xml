@@ -1,83 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Milan Tour</string>
 
-    <!--Header image - content description [CHAR LIMIT=NONE]-->
-    <string name="header_img">MILANO</string>
+    <!--Header image - content description (ImageView) [CHAR LIMIT=NONE]-->
+    <string name="img_header_description_string" translatable="false">MILANO</string>
 
-    <!--Quiz introduction [CHAR LIMIT = NONE]-->
-    <string name="intro">Here is a chance to test your knowledge of the city. Will you give it a try?</string>
+    <!--Quiz introduction (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_header_intro_string">Here is a chance to test your knowledge of the city. Will you give it a try?</string>
 
-    <!--Ask user's name [CHAR LIMIT = NONE]-->
-    <string name="ask_name">Good! Please enter your name: </string>
+    <!--Ask user's name (TestView) ([CHAR LIMIT = NONE]-->
+    <string name="txt_header_ask_name_string">Good! Please enter your name: </string>
 
-    <!--Name EditText hint [CHAR LIMIT = 20]-->
-    <string name="name">Your name here&#8230;</string>
+    <!--Name hint (EditText) [CHAR LIMIT = 20]-->
+    <string name="edit_header_name_hint_string">Your name here&#8230;</string>
 
-    <!--Quiz 1 question [CHAR LIMIT = NONE]-->
-    <string name="question_1">What is the city of Milan famous for?</string>
+    <!--Quiz 1 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_1_title_famous_for_string">What is the city of Milan famous for?</string>
 
-    <!--Quiz 1 answers [CHAR LIMIT = 20]-->
-    <string name="answer_1_a">Fashion and shopping</string>
-    <string name="answer_1_b">Beaches</string>
-    <string name="answer_1_c">The Duomo Cathedral</string>
+    <!--Quiz 1 answers (CheckBoxes) [CHAR LIMIT = 20]-->
+    <string name="cb_quiz_1_answer_a_shopping_string">Fashion and shopping</string>
+    <string name="cb_quiz_1_answer_b_beaches_string">Beaches</string>
+    <string name="cb_quiz_1_answer_c_cathedral_string">The Duomo Cathedral</string>
 
-    <!--Quiz 1 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz1_img">A view of Galleria Vittorio Emanuele II</string>
+    <!--Quiz 1 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_1_shoes_description_string">Trendy shoes</string>
 
-    <!--Quiz 2 question [CHAR LIMIT = NONE]-->
-    <string name="question_2">Who painted \"The Last Supper\"?</string>
+    <!--Quiz 2 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_2_title_who_painted_mural_string">Who painted \"The Last Supper\"?</string>
 
-    <!--Quiz 2 EditText hint [CHAR LIMIT = 20]-->
-    <string name="question_2_guess">Can you guess?</string>
+    <!--Quiz 2 hint (EditText) [CHAR LIMIT = 20]-->
+    <string name="edit_quiz_2_hint_guess_string">Can you guess?</string>
 
-    <!--Quiz 2 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz2_img">A detail of the art opera \"The Last Supper\"</string>
+    <!--Quiz 2 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_2_mural_description_string">A detail of the art opera \"The Last Supper\"</string>
 
-    <!--Quiz 3 question [CHAR LIMIT = NONE]-->
-    <string name="question_3">Which of these foods is typical of Milan?</string>
+    <!--Quiz 3 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_3_title_food_string">Which of these foods is typical of Milan?</string>
 
-    <!--Quiz 3 answers [CHAR LIMIT = 20]-->
-    <string name="answer_3_a">Pandoro</string>
-    <string name="answer_3_b">Panettone</string>
-    <string name="answer_3_c">Pandolce</string>
+    <!--Quiz 3 answers (RadioButton) [CHAR LIMIT = 20]-->
+    <string name="rb_quiz_3_answer_a_pandoro_string" translatable="false">Pandoro</string>
+    <string name="rb_quiz_3_answer_b_panettone_string" translatable="false">Panettone</string>
+    <string name="rb_quiz_3_answer_c_pandolce_string" translatable="false">Pandolce</string>
 
-    <!--Quiz 3 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz3_img">The typical Christmas Sweet of Milan</string>
+    <!--Quiz 3 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_3_food_description_string">The typical Christmas Sweet of Milan</string>
 
-    <!--Quiz 4 question [CHAR LIMIT = NONE]-->
-    <string name="question_4">What can you do in Milan?</string>
+    <!--Quiz 4 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_4_title_can_do_string">What can you do in Milan?</string>
 
-    <!--Quiz 1 answers [CHAR LIMIT = 37]-->
-    <string name="answer_4_a">Read Lucrezia Borgia\'s love letters</string>
-    <string name="answer_4_b">Dine in a tram, while visiting the city</string>
-    <string name="answer_4_c">Drink a good coffee in Piazza Navona</string>
+    <!--Quiz 4 answers (CheckBoxes) [CHAR LIMIT = 37]-->
+    <string name="cb_quiz_4_answer_a_letters_string">Read Lucrezia Borgia\'s love letters</string>
+    <string name="cb_quiz_4_answer_b_tram_string">Dine in a tram, while visiting the city</string>
+    <string name="cb_quiz_4_answer_c_coffee_string">Drink a good coffee in Piazza Navona</string>
 
-    <!--Quiz 5 question [CHAR LIMIT = NONE]-->
-    <string name="question_5">The mountains you can admire from Milan in those beautiful windy days are named&#8230;</string>
+    <!--Quiz 5 question title (TextView) [CHAR LIMIT = NONE]-->
+    <string name="txt_quiz_5_title_mountains">The mountains you can admire from Milan in those beautiful windy days are named&#8230;</string>
 
-    <!--Quiz 5 answers [CHAR LIMIT = 20]-->
-    <string name="answer_5_a">Carpazi</string>
-    <string name="answer_5_b">Apennines</string>
-    <string name="answer_5_c">Alps</string>
+    <!--Quiz 5 answers (RadioButtons) [CHAR LIMIT = 20]-->
+    <string name="rb_quiz_5_answer_a_carpazi_string">Carpazi</string>
+    <string name="rb_quiz_5_answer_a_apennines_string">Apennines</string>
+    <string name="rb_quiz_5_answer_c_alps_string">Alps</string>
 
-    <!--Quiz 5 image - content description [CHAR LIMIT = NONE]-->
-    <string name="quiz5_img">Snowy mountain</string>
+    <!--Quiz 5 image - content description (ImageView) [CHAR LIMIT = NONE]-->
+    <string name="img_quiz_5_mountains_description_string">Snowy mountain</string>
 
-    <!--submit button [CHAR LIMIT = 25]-->
-    <string name="check_results">Check your results</string>
+    <!--Submit (Button) [CHAR LIMIT = 25]-->
+    <string name="btn_check_results_string">Check your results</string>
 
-    <!--Toast: if user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
-    <string name="default_user_name">my friend</string>
+    <!--(Toast) If user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
+    <string name="toast_default_user_name_string">my friend</string>
 
-    <!--Toast: good result [CHAR LIMIT = NONE]-->
-    <string name="toast_good">Well done, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+    <!--(Toast) If score >4: good result [CHAR LIMIT = NONE]-->
+    <string name="toast_good_string">Well done, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         Your knowledge of Milan is awesome! \
         \
         Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 9</string>
 
-    <!--Toast: not bad, retry! [CHAR LIMIT = NONE]-->
-    <string name="toast_nice_try">Nice try, <xliff:g example="Amy" id="name">%s</xliff:g>. \
+    <!--(Toast) If score <=4: Not bad, retry! [CHAR LIMIT = NONE]-->
+    <string name="toast_nice_try_string">Nice try, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         But I know you can do better! \
         \
         Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 9</string>

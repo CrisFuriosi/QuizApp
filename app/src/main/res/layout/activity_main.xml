@@ -16,33 +16,33 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:adjustViewBounds="true"
-            android:contentDescription="@string/header_img"
+            android:contentDescription="@string/img_header_description_string"
             android:scaleType="fitCenter"
-            android:src="@drawable/header" />
+            android:src="@drawable/image_header" />
 
         <TextView
-            style="@style/questionTitleStyle"
+            style="@style/quizTitleStyle"
             android:layout_margin="@dimen/margin"
-            android:text="@string/intro" />
+            android:text="@string/txt_header_intro_string" />
 
         <TextView
-            style="@style/questionTitleStyle"
+            style="@style/quizTitleStyle"
             android:layout_marginLeft="@dimen/margin"
             android:layout_marginRight="@dimen/margin"
-            android:text="@string/ask_name" />
+            android:text="@string/txt_header_ask_name_string" />
 
         <EditText
-            android:id="@+id/user_name"
+            android:id="@+id/edit_user_name"
             style="@style/introEditTextStyle"
-            android:hint="@string/name" />
+            android:hint="@string/edit_header_name_hint_string" />
 
         <LinearLayout
-            style="@style/questionContainerLinearLayoutStyle"
+            style="@style/quizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/questionTitleStyle"
-                android:text="@string/question_1" />
+                style="@style/quizTitleStyle"
+                android:text="@string/txt_quiz_1_title_famous_for_string" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,42 +50,42 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    style="@style/questionChoicesStyle"
+                    style="@style/quizChoicesStyle"
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/quiz_1_answer_a"
+                        android:id="@+id/cb_quiz_1_answer_a_shopping"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_1_a" />
+                        android:text="@string/cb_quiz_1_answer_a_shopping_string" />
 
                     <CheckBox
-                        android:id="@+id/quiz_1_answer_b"
+                        android:id="@+id/cb_quiz_1_answer_b_beaches"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_1_b" />
+                        android:text="@string/cb_quiz_1_answer_b_beaches_string" />
 
                     <CheckBox
-                        android:id="@+id/quiz_1_answer_c"
+                        android:id="@+id/cb_quiz_1_answer_c_cathedral"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_1_c" />
+                        android:text="@string/cb_quiz_1_answer_c_cathedral_string" />
                 </LinearLayout>
 
                 <ImageView
-                    style="@style/questionImageStyle"
+                    style="@style/quizImageStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/quiz1_img"
-                    android:src="@drawable/quiz1" />
+                    android:contentDescription="@string/img_quiz_1_shoes_description_string"
+                    android:src="@drawable/image_quiz1_famous_for" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            style="@style/questionContainerLinearLayoutStyle"
+            style="@style/quizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/questionTitleStyle"
+                style="@style/quizTitleStyle"
                 android:layout_marginBottom="@dimen/small_margin"
-                android:text="@string/question_2" />
+                android:text="@string/txt_quiz_2_title_who_painted_mural_string" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,126 +95,122 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/quiz_2_answer"
-                    style="@style/questionEditTextStyle"
-                    android:hint="@string/question_2_guess" />
+                    android:id="@+id/edit_quiz_2_answer"
+                    style="@style/quizEditTextStyle"
+                    android:hint="@string/edit_quiz_2_hint_guess_string" />
 
                 <ImageView
-                    style="@style/questionImageStyle"
-                    android:contentDescription="@string/quiz2_img"
-                    android:src="@drawable/quiz2" />
+                    style="@style/quizImageStyle"
+                    android:contentDescription="@string/img_quiz_2_mural_description_string"
+                    android:src="@drawable/image_quiz2_mural" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            style="@style/questionContainerLinearLayoutStyle"
+            style="@style/quizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/questionTitleStyle"
-                android:text="@string/question_3" />
+                style="@style/quizTitleStyle"
+                android:text="@string/txt_quiz_3_title_food_string" />
 
             <LinearLayout
-                style="@style/questionChoicesStyle"
+                style="@style/quizChoicesStyle"
                 android:orientation="horizontal">
 
                 <RadioGroup
-                    style="@style/questionChoicesStyle"
+                    style="@style/quizChoicesStyle"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/quiz_3_answer_a"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_3_a" />
+                        android:text="@string/rb_quiz_3_answer_a_pandoro_string" />
 
                     <RadioButton
-                        android:id="@+id/quiz_3_answer_b"
+                        android:id="@+id/rb_quiz_3_answer_b_panettone"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_3_b" />
+                        android:text="@string/rb_quiz_3_answer_b_panettone_string" />
 
                     <RadioButton
-                        android:id="@+id/quiz_3_answer_c"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_3_c" />
+                        android:text="@string/rb_quiz_3_answer_c_pandolce_string" />
                 </RadioGroup>
 
                 <ImageView
-                    style="@style/questionImageStyle"
-                    android:contentDescription="@string/quiz3_img"
-                    android:src="@drawable/quiz3" />
+                    style="@style/quizImageStyle"
+                    android:contentDescription="@string/img_quiz_3_food_description_string"
+                    android:src="@drawable/image_quiz3_food" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            style="@style/questionContainerLinearLayoutStyle"
+            style="@style/quizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/questionTitleStyle"
-                android:text="@string/question_4" />
+                style="@style/quizTitleStyle"
+                android:text="@string/txt_quiz_4_title_can_do_string" />
 
             <CheckBox
-                android:id="@+id/quiz_4_answer_a"
+                android:id="@+id/cb_quiz_4_answer_a_letters"
                 style="@style/checkBoxesAndRadioButtonsStyle"
-                android:text="@string/answer_4_a" />
+                android:text="@string/cb_quiz_4_answer_a_letters_string" />
 
             <CheckBox
-                android:id="@+id/quiz_4_answer_b"
+                android:id="@+id/cb_quiz_4_answer_b_beaches"
                 style="@style/checkBoxesAndRadioButtonsStyle"
-                android:text="@string/answer_4_b" />
+                android:text="@string/cb_quiz_4_answer_b_tram_string" />
 
             <CheckBox
-                android:id="@+id/quiz_4_answer_c"
+                android:id="@+id/cb_quiz_4_answer_c_cathedral"
                 style="@style/checkBoxesAndRadioButtonsStyle"
-                android:text="@string/answer_4_c" />
+                android:text="@string/cb_quiz_4_answer_c_coffee_string" />
         </LinearLayout>
 
         <LinearLayout
-            style="@style/questionContainerLinearLayoutStyle"
+            style="@style/quizContainerLinearLayoutStyle"
             android:orientation="vertical">
 
             <TextView
-                style="@style/questionTitleStyle"
-                android:text="@string/question_5" />
+                style="@style/quizTitleStyle"
+                android:text="@string/txt_quiz_5_title_mountains" />
 
             <LinearLayout
-                style="@style/questionChoicesStyle"
+                style="@style/quizChoicesStyle"
                 android:orientation="horizontal">
 
                 <RadioGroup
-                    style="@style/questionChoicesStyle"
+                    style="@style/quizChoicesStyle"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/quiz_5_answer_a"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_5_a" />
+                        android:text="@string/rb_quiz_5_answer_a_carpazi_string" />
 
                     <RadioButton
-                        android:id="@+id/quiz_5_answer_b"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_5_b" />
+                        android:text="@string/rb_quiz_5_answer_a_apennines_string" />
 
                     <RadioButton
-                        android:id="@+id/quiz_5_answer_c"
+                        android:id="@+id/rb_quiz_5_answer_c_alps"
                         style="@style/checkBoxesAndRadioButtonsStyle"
-                        android:text="@string/answer_5_c" />
+                        android:text="@string/rb_quiz_5_answer_c_alps_string" />
                 </RadioGroup>
 
                 <ImageView
-                    style="@style/questionImageStyle"
-                    android:contentDescription="@string/quiz5_img"
-                    android:src="@drawable/quiz5" />
+                    style="@style/quizImageStyle"
+                    android:contentDescription="@string/img_quiz_5_mountains_description_string"
+                    android:src="@drawable/image_quiz5_mountains" />
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:id="@+id/submit_button"
+            android:id="@+id/bt_submit_results"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin"
-            android:onClick="submit"
-            android:text="@string/check_results" />
+            android:onClick="submitResults"
+            android:text="@string/btn_check_results_string" />
     </LinearLayout>
 </ScrollView>
 
