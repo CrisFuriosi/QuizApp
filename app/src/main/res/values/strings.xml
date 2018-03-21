@@ -71,15 +71,12 @@
     <!--(Toast) If user_name is empty or null, assign user name [CHAR LIMIT = NONE]-->
     <string name="default_user_name_toast_string">my friend</string>
 
-    <!--(Toast) If score >4: good result [CHAR LIMIT = NONE]-->
-    <string name="well_done_toast_string">Well done, <xliff:g example="Amy" id="name">%s</xliff:g>. \
-        Your knowledge of Milan is awesome! \
-        \
-        Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 9</string>
+    <!--(Toast) If score >3: good result [CHAR LIMIT = NONE]-->
+    <string name="well_done_toast_string">Well done, <xliff:g example="Amy" id="name">%s</xliff:g>. \\         Your knowledge of Milan is awesome! \\         \\         Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 5</string>
 
-    <!--(Toast) If score <=4: Not bad, retry! [CHAR LIMIT = NONE]-->
+    <!--(Toast) If score <=3: Not bad, retry! [CHAR LIMIT = NONE]-->
     <string name="nice_try_toast_string">Nice try, <xliff:g example="Amy" id="name">%s</xliff:g>. \
         But I know you can do better! \
         \
-        Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 9</string>
+        Your score is: <xliff:g example="2" id="score">%d</xliff:g> out of 5</string>
 </resources>

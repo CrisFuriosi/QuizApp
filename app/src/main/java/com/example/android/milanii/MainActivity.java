@@ -3,6 +3,7 @@ package com.example.android.milanii;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -15,13 +16,13 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // define the views to initialize inside onCreate() method
-    CheckBox cbQuiz1AnswerAShopping, cbQuiz1AnswerBBeaches, cbQuiz1AnswerCCathedral,
-            cbQuiz4AnswerALetters, cbQuiz4AnswerBBeaches, cbQuiz4AnswerCCoffee;
-    EditText editUserName, editQuiz2Answer;
-    RadioButton rbQuiz3AnswerBPanettone, rbQuiz5AnswerCAlps;
+    private CheckBox cbQuiz1AnswerAShopping, cbQuiz1AnswerBBeaches, cbQuiz1AnswerCCathedral,
+            cbQuiz4AnswerALetters, cbQuiz4AnswerBTram, cbQuiz4AnswerCCoffee;
+    private EditText editUserName, editQuiz2Answer;
+    private RadioButton rbQuiz3AnswerBPanettone, rbQuiz5AnswerCAlps;
 
     // define the score at the beginning of the quiz game
-    int score;
+    private int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         editQuiz2Answer = findViewById(R.id.edit_quiz_2_answer);
         rbQuiz3AnswerBPanettone = findViewById(R.id.rb_quiz_3_answer_b_panettone);
         cbQuiz4AnswerALetters = findViewById(R.id.cb_quiz_4_answer_a_letters);
-        cbQuiz4AnswerBBeaches = findViewById(R.id.cb_quiz_4_answer_b_beaches);
+        cbQuiz4AnswerBTram = findViewById(R.id.cb_quiz_4_answer_b_tram);
         cbQuiz4AnswerCCoffee = findViewById(R.id.cb_quiz_4_answer_c_coffee);
         rbQuiz5AnswerCAlps = findViewById(R.id.rb_quiz_5_answer_c_alps);
     }
@@ -46,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
      * Checks user's name
      * Checks user's answers and increment score
      * Calls feedback toast
-     *
-     * @param view - method is called onClick of ViewButton
      */
     public void submitResults(View view) {
 
@@ -58,13 +57,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Check Quiz 1 and assign score
-        incrementScoreIfBooleanIsTrue(cbQuiz1AnswerAShopping.isChecked());
-        incrementScoreIfBooleanIsFalse(cbQuiz1AnswerBBeaches.isChecked());
-        incrementScoreIfBooleanIsTrue(cbQuiz1AnswerCCathedral.isChecked());
+        if (
+                cbQuiz1AnswerAShopping.isChecked()
+                        && !cbQuiz1AnswerBBeaches.isChecked()
+                        && cbQuiz1AnswerCCathedral.isChecked()) {
+            score++;
+        }
 
         // Check Quiz 2 and assign score
         String guessAnswer2 = (editQuiz2Answer).getText().toString().replace(" ", "");
-        if (guessAnswer2.equalsIgnoreCase("Leonardo") || guessAnswer2.equalsIgnoreCase("LeonardoDaVinci")) {
+
+        Log.i("Answer2", guessAnswer2);
+        if (
+                guessAnswer2.equalsIgnoreCase("Leonardo")
+                        || guessAnswer2.equalsIgnoreCase("LeonardoDaVinci")) {
             score++;
         }
 
@@ -72,15 +78,19 @@ public class MainActivity extends AppCompatActivity {
         incrementScoreIfBooleanIsTrue(rbQuiz3AnswerBPanettone.isChecked());
 
         // Check Quiz 4 and assign score
-        incrementScoreIfBooleanIsTrue(cbQuiz4AnswerALetters.isChecked());
-        incrementScoreIfBooleanIsTrue(cbQuiz4AnswerBBeaches.isChecked());
-        incrementScoreIfBooleanIsFalse(cbQuiz4AnswerCCoffee.isChecked());
+
+        if (
+                cbQuiz4AnswerALetters.isChecked()
+                        && cbQuiz4AnswerBTram.isChecked()
+                        && !cbQuiz4AnswerCCoffee.isChecked()) {
+            score++;
+        }
 
         // Check Quiz 5 and assign score
         incrementScoreIfBooleanIsTrue(rbQuiz5AnswerCAlps.isChecked());
 
         // Display results toast
-        if (score > 4) {
+        if (score > 3) {
             Toast.makeText(this, getString(R.string.well_done_toast_string, userName, score), Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this, getString(R.string.nice_try_toast_string, userName, score), Toast.LENGTH_LONG).show();
@@ -96,17 +106,6 @@ public class MainActivity extends AppCompatActivity {
      */
     private void incrementScoreIfBooleanIsTrue(boolean answer) {
         if (answer) {
-            score++;
-        }
-    }
-
-    /**
-     * This method increases score when the answer is a boolean and its value is set to false
-     *
-     * @param answer is the answer to verify
-     */
-    private void incrementScoreIfBooleanIsFalse(boolean answer) {
-        if (!answer) {
             score++;
         }
     }

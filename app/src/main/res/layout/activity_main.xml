@@ -157,7 +157,7 @@
                 android:text="@string/quiz_4_cb_answer_a_letters_string" />
 
             <CheckBox
-                android:id="@+id/cb_quiz_4_answer_b_beaches"
+                android:id="@+id/cb_quiz_4_answer_b_tram"
                 style="@style/CheckBoxesAndRadioButtonsStyle"
                 android:text="@string/quiz_4_cb_answer_b_tram_string" />
 
